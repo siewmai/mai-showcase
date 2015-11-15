@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		18E742D98221D4A4BAD34E9A /* Pods_mai_showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C98DFE36606D9130894B9D /* Pods_mai_showcase.framework */; };
+		2C36FB891BF8C036001AD823 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36FB881BF8C036001AD823 /* FeedVC.swift */; };
+		2C36FB8B1BF8C33B001AD823 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C36FB8A1BF8C33B001AD823 /* PostCell.swift */; };
 		2C86A7D51BF7847A0000FF13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A7D41BF7847A0000FF13 /* AppDelegate.swift */; };
 		2C86A7D71BF7847A0000FF13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A7D61BF7847A0000FF13 /* ViewController.swift */; };
 		2C86A7DA1BF7847A0000FF13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C86A7D81BF7847A0000FF13 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C36FB881BF8C036001AD823 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		2C36FB8A1BF8C33B001AD823 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		2C86A7D11BF7847A0000FF13 /* mai-showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mai-showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C86A7D41BF7847A0000FF13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C86A7D61BF7847A0000FF13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +100,6 @@
 				2C86A7E71BF784C80000FF13 /* View */,
 				2C86A7E61BF784C00000FF13 /* Controller */,
 				2C86A7D41BF7847A0000FF13 /* AppDelegate.swift */,
-				2C86A7D61BF7847A0000FF13 /* ViewController.swift */,
 				2C86A7D81BF7847A0000FF13 /* Main.storyboard */,
 				2C86A7DB1BF7847A0000FF13 /* Assets.xcassets */,
 				2C86A7DD1BF7847A0000FF13 /* LaunchScreen.storyboard */,
@@ -108,6 +111,8 @@
 		2C86A7E61BF784C00000FF13 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2C86A7D61BF7847A0000FF13 /* ViewController.swift */,
+				2C36FB881BF8C036001AD823 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 				2C86A7F21BF7A2630000FF13 /* MaterialView.swift */,
 				2C86A7F71BF7AE850000FF13 /* MaterialButton.swift */,
 				2C86A7F91BF7BB8B0000FF13 /* MaterialTextField.swift */,
+				2C36FB8A1BF8C33B001AD823 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -313,6 +319,8 @@
 				2C86A8041BF7E5E70000FF13 /* DataService.swift in Sources */,
 				2C86A7F31BF7A2630000FF13 /* MaterialView.swift in Sources */,
 				2C86A7D71BF7847A0000FF13 /* ViewController.swift in Sources */,
+				2C36FB891BF8C036001AD823 /* FeedVC.swift in Sources */,
+				2C36FB8B1BF8C33B001AD823 /* PostCell.swift in Sources */,
 				2C86A7D51BF7847A0000FF13 /* AppDelegate.swift in Sources */,
 				2C86A7F61BF7A3D40000FF13 /* Constants.swift in Sources */,
 				2C86A7F81BF7AE850000FF13 /* MaterialButton.swift in Sources */,
