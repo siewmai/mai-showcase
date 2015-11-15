@@ -24,6 +24,7 @@
 		2C86A7FF1BF7C94A0000FF13 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A7FC1BF7C94A0000FF13 /* Bolts.framework */; };
 		2C86A8001BF7C94A0000FF13 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A7FD1BF7C94A0000FF13 /* FBSDKCoreKit.framework */; };
 		2C86A8011BF7C94A0000FF13 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C86A7FE1BF7C94A0000FF13 /* FBSDKLoginKit.framework */; };
+		2C86A8041BF7E5E70000FF13 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C86A8031BF7E5E70000FF13 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		2C86A7FC1BF7C94A0000FF13 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		2C86A7FD1BF7C94A0000FF13 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		2C86A7FE1BF7C94A0000FF13 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		2C86A8031BF7E5E70000FF13 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		56C98DFE36606D9130894B9D /* Pods_mai_showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mai_showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AC2A73703B7AF53E46AF092 /* Pods-mai-showcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mai-showcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mai-showcase/Pods-mai-showcase.debug.xcconfig"; sourceTree = "<group>"; };
 		D0106CCB910F9234736612F5 /* Pods-mai-showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mai-showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-mai-showcase/Pods-mai-showcase.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		2C86A7D31BF7847A0000FF13 /* mai-showcase */ = {
 			isa = PBXGroup;
 			children = (
+				2C86A8021BF7E59E0000FF13 /* Services */,
 				2C86A7FB1BF7C9250000FF13 /* Frameworks */,
 				2C86A7F41BF7A3AB0000FF13 /* Util */,
 				2C86A7E91BF793990000FF13 /* Resources */,
@@ -153,6 +156,14 @@
 				2C86A7FE1BF7C94A0000FF13 /* FBSDKLoginKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C86A8021BF7E59E0000FF13 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2C86A8031BF7E5E70000FF13 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		401238F32C695193519E4CD0 /* Pods */ = {
@@ -299,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C86A7FA1BF7BB8B0000FF13 /* MaterialTextField.swift in Sources */,
+				2C86A8041BF7E5E70000FF13 /* DataService.swift in Sources */,
 				2C86A7F31BF7A2630000FF13 /* MaterialView.swift in Sources */,
 				2C86A7D71BF7847A0000FF13 /* ViewController.swift in Sources */,
 				2C86A7D51BF7847A0000FF13 /* AppDelegate.swift in Sources */,
