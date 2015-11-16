@@ -17,3 +17,8 @@ let SEGUE_LOGGED_IN = "loggedIn"
 
 // Status Codes
 let STATUS_ACCOUNT_NONEXIST = -8
+
+// ImageShack API
+let IMAGESHACK_URL = "https://post.imageshack.us/upload_api.php"
+let IMAGESHACK_API = "Your api key"
+

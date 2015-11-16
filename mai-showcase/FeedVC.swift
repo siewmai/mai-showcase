@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import Alamofire
 
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -97,6 +98,43 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     }
     
     @IBAction func makePost(sender: AnyObject) {
+        
+        if let text = postField.text where text != "" {
+            if let image = postImg.image {
+                let imageData = UIImageJPEGRepresentation(image, 0.2)!
+                let key = IMAGESHACK_API.dataUsingEncoding(NSUTF8StringEncoding)!
+                let format = "json".dataUsingEncoding(NSUTF8StringEncoding)!
+                
+                Alamofire.upload(
+                    .POST,
+                    IMAGESHACK_URL,
+                    multipartFormData: { multipartFormData in
+                        multipartFormData.appendBodyPart(data: imageData, name: "fileupload", fileName: "mai-showcase", mimeType: "image/jpg")
+                        multipartFormData.appendBodyPart(data: key, name: "key")
+                        multipartFormData.appendBodyPart(data: format, name: "format")
+                    },
+                    encodingCompletion: { encodingResult in
+                        switch encodingResult {
+                        case .Success(let upload, _, _):
+                            upload.responseJSON { response in
+                                debugPrint(response)
+                                
+                                if let info = response.result.value as? Dictionary<String, AnyObject> {
+                                    if let links = info["links"] as? Dictionary<String, AnyObject> {
+                                        if let imageLink = links["image_link"] as? String {
+                                            print("\(imageLink)")
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        case .Failure(let encodingError):
+                            print(encodingError)
+                        }
+                    }
+                )
+            }
+        }
     }
     
 }
