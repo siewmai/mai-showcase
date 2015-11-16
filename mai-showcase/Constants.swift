@@ -20,5 +20,5 @@ let STATUS_ACCOUNT_NONEXIST = -8
 
 // ImageShack API
 let IMAGESHACK_URL = "https://post.imageshack.us/upload_api.php"
-let IMAGESHACK_API = "Your api key"
+let IMAGESHACK_API = "1GHKRSVXf4c2a2b18d1c624352f15ea613eb5f67"
 
