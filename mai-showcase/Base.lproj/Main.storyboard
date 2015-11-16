@@ -380,6 +380,7 @@
                                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="descriptionLbl" destination="QKM-cX-rNL" id="hZ9-gM-s07"/>
+                                            <outlet property="likeImg" destination="hHS-E3-JDp" id="rNC-aI-LbX"/>
                                             <outlet property="likesLbl" destination="gvz-If-Fko" id="Oks-ka-qYg"/>
                                             <outlet property="profileImg" destination="DH5-ec-Q1x" id="va8-WP-uaQ"/>
                                             <outlet property="showcaseImg" destination="2FY-uc-6LA" id="Ry3-gy-vRC"/>
